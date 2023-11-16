@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+   body {
+                    font-family: Arial, sans-serif;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                section {
+                    margin-bottom: 40px;
+                }
+                img {
+                    max-width: 100%;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                .chart-container {
+                    width: 100%;
+                }
+  </style>
+ </head>
+ <body>
+  <h1>
+   Relatório de Detecção de Objetos
+  </h1>
+  <section>
+   <h2>
+    Detecções na imagem: Sorvetes.jpg
+   </h2>
+   <img src="./1-Images/detected_Sorvetes.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      car
+     </td>
+     <td>
+      0.75
+     </td>
+     <td>
+      tensor([471.60434, 145.95139, 543.35785, 286.44385])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.74
+     </td>
+     <td>
+      tensor([   4.96818,  658.49182,  283.53973, 1022.68536])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      potted plant
+     </td>
+     <td>
+      0.73
+     </td>
+     <td>
+      tensor([ 56.96076,   0.38334, 168.45554,  81.49142])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      car
+     </td>
+     <td>
+      0.48
+     </td>
+     <td>
+      tensor([510.47650, 132.67198, 575.39899, 210.72998])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chair
+     </td>
+     <td>
+      0.40
+     </td>
+     <td>
+      tensor([534.15253, 193.25125, 575.70081, 337.33606])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.33
+     </td>
+     <td>
+      tensor([392.99405, 708.54785, 576.00000, 969.91034])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      tv
+     </td>
+     <td>
+      0.31
+     </td>
+     <td>
+      tensor([227.67424, 186.72375, 275.97205, 242.33659])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      broccoli
+     </td>
+     <td>
+      0.31
+     </td>
+     <td>
+      tensor([432.26782, 298.90634, 520.26843, 391.85489])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bottle
+     </td>
+     <td>
+      0.30
+     </td>
+     <td>
+      tensor([262.29587,  39.39297, 281.77396,  90.61333])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.29
+     </td>
+     <td>
+      tensor([405.04999, 412.11905, 576.00000, 657.48486])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      potted plant
+     </td>
+     <td>
+      0.28
+     </td>
+     <td>
+      tensor([434.54620, 300.52719, 521.63428, 394.62115])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      cup
+     </td>
+     <td>
+      0.26
+     </td>
+     <td>
+      tensor([398.62231, 642.76453, 508.58755, 766.90637])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      cake
+     </td>
+     <td>
+      0.25
+     </td>
+     <td>
+      tensor([389.77338, 567.86316, 537.88269, 663.49500])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: De mask.jpg
+   </h2>
+   <img src="./1-Images/detected_De mask.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.62
+     </td>
+     <td>
+      tensor([  19.48916,   97.27110,  741.74084, 1024.00000])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.32
+     </td>
+     <td>
+      tensor([648.87531,   0.00000, 766.98096,  97.87938])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: WhatsApp Image 2021-06-24 at 23.49.10 (1).jpeg
+   </h2>
+   <img src="./1-Images/detected_WhatsApp Image 2021-06-24 at 23.49.10 (1).jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      dog
+     </td>
+     <td>
+      0.75
+     </td>
+     <td>
+      tensor([ 308.73285,  568.95691,  898.25848, 1279.06177])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.55
+     </td>
+     <td>
+      tensor([   0.00000,  248.28790,  956.61792, 1279.77856])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      potted plant
+     </td>
+     <td>
+      0.47
+     </td>
+     <td>
+      tensor([ 859.44696,  846.81262,  959.95270, 1072.46765])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chair
+     </td>
+     <td>
+      0.42
+     </td>
+     <td>
+      tensor([  3.26398, 561.64746,  88.81860, 714.25977])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Mesinha de 100 reais.jpg
+   </h2>
+   <img src="./1-Images/detected_Mesinha de 100 reais.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.87
+     </td>
+     <td>
+      tensor([ 398.12659,  653.31128,  813.53552, 1023.29718])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: WhatsApp Image 2020-07-17 at 00.19.19.jpeg
+   </h2>
+   <img src="./1-Images/detected_WhatsApp Image 2020-07-17 at 00.19.19.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      dog
+     </td>
+     <td>
+      0.49
+     </td>
+     <td>
+      tensor([ 30.21403, 241.82841, 343.02597, 699.50323])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: No Bras.jpg
+   </h2>
+   <img src="./1-Images/detected_No Bras.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.94
+     </td>
+     <td>
+      tensor([268.73944, 614.57507, 419.70728, 946.59991])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bus
+     </td>
+     <td>
+      0.84
+     </td>
+     <td>
+      tensor([  0.00000, 523.86792, 546.46655, 724.81165])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bus
+     </td>
+     <td>
+      0.69
+     </td>
+     <td>
+      tensor([666.15143, 577.07947, 768.00000, 776.21735])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bus
+     </td>
+     <td>
+      0.64
+     </td>
+     <td>
+      tensor([575.73450, 587.55652, 643.69611, 716.98175])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bus
+     </td>
+     <td>
+      0.50
+     </td>
+     <td>
+      tensor([625.90295, 558.63300, 729.36859, 752.02472])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bus
+     </td>
+     <td>
+      0.40
+     </td>
+     <td>
+      tensor([541.78766, 615.46191, 600.29175, 708.35645])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bus
+     </td>
+     <td>
+      0.33
+     </td>
+     <td>
+      tensor([593.36786, 581.08624, 691.45966, 732.12610])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Eu.jpeg
+   </h2>
+   <img src="./1-Images/detected_Eu.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.81
+     </td>
+     <td>
+      tensor([172.63518, 470.57858, 411.39749, 758.65424])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.80
+     </td>
+     <td>
+      tensor([295.17111,  63.15244, 648.25226, 751.59558])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.69
+     </td>
+     <td>
+      tensor([  9.63594,  11.41440, 388.34357, 740.09827])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      cup
+     </td>
+     <td>
+      0.27
+     </td>
+     <td>
+      tensor([197.62993, 428.38052, 271.41016, 508.06546])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bottle
+     </td>
+     <td>
+      0.27
+     </td>
+     <td>
+      tensor([195.79236, 428.45093, 270.45148, 506.95047])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Sage sendo Falsa.jpeg
+   </h2>
+   <img src="./1-Images/detected_Sage sendo Falsa.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      dog
+     </td>
+     <td>
+      0.75
+     </td>
+     <td>
+      tensor([ 308.73285,  568.95691,  898.25848, 1279.06177])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.55
+     </td>
+     <td>
+      tensor([   0.00000,  248.28790,  956.61792, 1279.77856])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      potted plant
+     </td>
+     <td>
+      0.47
+     </td>
+     <td>
+      tensor([ 859.44696,  846.81262,  959.95270, 1072.46765])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chair
+     </td>
+     <td>
+      0.42
+     </td>
+     <td>
+      tensor([  3.26398, 561.64746,  88.81860, 714.25977])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Eu e Beh.jpeg
+   </h2>
+   <img src="./1-Images/detected_Eu e Beh.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      dog
+     </td>
+     <td>
+      0.69
+     </td>
+     <td>
+      tensor([1020.02380,  600.40399, 1596.81580, 1192.63074])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.54
+     </td>
+     <td>
+      tensor([  12.43538,   83.44410, 1383.59131, 1200.00000])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Dispidida da Fanta.jpg
+   </h2>
+   <img src="./1-Images/detected_Dispidida da Fanta.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.82
+     </td>
+     <td>
+      tensor([102.71118, 464.25879, 195.31357, 718.99152])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.81
+     </td>
+     <td>
+      tensor([178.64668, 510.48648, 316.78180, 623.59827])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.79
+     </td>
+     <td>
+      tensor([460.24341, 446.20987, 559.82465, 714.10254])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.72
+     </td>
+     <td>
+      tensor([682.69153, 504.19360, 767.32898, 699.54565])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chair
+     </td>
+     <td>
+      0.68
+     </td>
+     <td>
+      tensor([ 56.62319, 567.35309, 123.96788, 698.45306])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.67
+     </td>
+     <td>
+      tensor([559.05774, 501.28018, 629.58936, 685.35516])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.67
+     </td>
+     <td>
+      tensor([373.91394, 519.31073, 452.18384, 644.56494])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chair
+     </td>
+     <td>
+      0.56
+     </td>
+     <td>
+      tensor([305.52325, 569.98157, 358.45844, 613.00238])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.56
+     </td>
+     <td>
+      tensor([609.70667, 498.52310, 693.25110, 684.46722])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      pizza
+     </td>
+     <td>
+      0.56
+     </td>
+     <td>
+      tensor([203.72775, 686.75427, 290.60977, 725.11218])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      pizza
+     </td>
+     <td>
+      0.53
+     </td>
+     <td>
+      tensor([215.37187, 639.84418, 297.35001, 673.26520])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.51
+     </td>
+     <td>
+      tensor([441.32343, 439.96857, 490.38281, 549.85724])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      pizza
+     </td>
+     <td>
+      0.50
+     </td>
+     <td>
+      tensor([301.52261, 692.42267, 404.69781, 721.44611])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      vase
+     </td>
+     <td>
+      0.49
+     </td>
+     <td>
+      tensor([179.24692, 855.01208, 253.36177, 970.16876])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      dining table
+     </td>
+     <td>
+      0.45
+     </td>
+     <td>
+      tensor([178.92174, 609.49231, 548.29669, 977.75525])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      skateboard
+     </td>
+     <td>
+      0.39
+     </td>
+     <td>
+      tensor([673.35443, 679.58710, 722.93597, 710.02655])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      chair
+     </td>
+     <td>
+      0.32
+     </td>
+     <td>
+      tensor([ 61.89136, 521.57635, 185.52884, 703.56628])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Eu eo Beh.jpeg
+   </h2>
+   <img src="./1-Images/detected_Eu eo Beh.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      dog
+     </td>
+     <td>
+      0.49
+     </td>
+     <td>
+      tensor([ 30.21403, 241.82841, 343.02597, 699.50323])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Evento.jpeg
+   </h2>
+   <img src="./1-Images/detected_Evento.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.80
+     </td>
+     <td>
+      tensor([ 357.93048,  187.41013,  702.69427, 1192.26404])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.74
+     </td>
+     <td>
+      tensor([810.75464, 305.28247, 959.59656, 827.31653])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.66
+     </td>
+     <td>
+      tensor([156.34769, 323.77408, 311.01657, 673.86731])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      remote
+     </td>
+     <td>
+      0.60
+     </td>
+     <td>
+      tensor([668.72406, 461.52881, 708.17059, 503.45673])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.51
+     </td>
+     <td>
+      tensor([250.31985, 257.54578, 356.52914, 501.98755])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.48
+     </td>
+     <td>
+      tensor([673.79071, 288.26520, 756.92560, 464.17096])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.48
+     </td>
+     <td>
+      tensor([ 59.66959, 434.85266, 210.00497, 711.69971])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.44
+     </td>
+     <td>
+      tensor([149.39679, 450.30826, 273.15765, 716.40332])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.42
+     </td>
+     <td>
+      tensor([635.77991, 355.28882, 746.09265, 684.71899])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      remote
+     </td>
+     <td>
+      0.38
+     </td>
+     <td>
+      tensor([360.67844, 619.52924, 424.08633, 677.47333])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      couch
+     </td>
+     <td>
+      0.27
+     </td>
+     <td>
+      tensor([ 107.98618,  842.30841,  951.63000, 1280.00000])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.26
+     </td>
+     <td>
+      tensor([708.31854, 361.87671, 942.58539, 766.50793])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Meu neto na Moto.jpg
+   </h2>
+   <img src="./1-Images/detected_Meu neto na Moto.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      cat
+     </td>
+     <td>
+      0.84
+     </td>
+     <td>
+      tensor([  3.70338, 342.33105, 294.19644, 500.97891])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      motorcycle
+     </td>
+     <td>
+      0.63
+     </td>
+     <td>
+      tensor([   0.00000,  258.07852,  673.12421, 1024.00000])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Eu e Sage.jpeg
+   </h2>
+   <img src="./1-Images/detected_Eu e Sage.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      dog
+     </td>
+     <td>
+      0.65
+     </td>
+     <td>
+      tensor([ 351.53015,  322.92627,  906.64514, 1066.62341])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.58
+     </td>
+     <td>
+      tensor([   2.93286,  313.99246,  453.98727, 1280.00000])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bottle
+     </td>
+     <td>
+      0.35
+     </td>
+     <td>
+      tensor([900.38037, 181.16855, 931.62549, 252.49777])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: No quinta da Mata.jpg
+   </h2>
+   <img src="./1-Images/detected_No quinta da Mata.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.91
+     </td>
+     <td>
+      tensor([163.97006, 477.51752, 271.71329, 665.04449])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.89
+     </td>
+     <td>
+      tensor([504.18488, 472.01645, 604.00079, 689.75171])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.72
+     </td>
+     <td>
+      tensor([426.92505, 370.03122, 479.80844, 440.57700])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      bird
+     </td>
+     <td>
+      0.62
+     </td>
+     <td>
+      tensor([ 87.32208,  24.03741, 149.48138,  60.04082])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: As Melhores ea Menato.jpg
+   </h2>
+   <img src="./1-Images/detected_As Melhores ea Menato.jpg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.93
+     </td>
+     <td>
+      tensor([ 18.50934, 352.81293, 211.74629, 790.30743])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.93
+     </td>
+     <td>
+      tensor([550.12311, 351.55450, 765.09564, 793.60413])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.92
+     </td>
+     <td>
+      tensor([197.87901, 384.11127, 365.36615, 788.40613])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.91
+     </td>
+     <td>
+      tensor([467.76740, 383.42859, 597.59265, 789.84534])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.89
+     </td>
+     <td>
+      tensor([350.00812, 339.26727, 487.71582, 793.34534])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      cake
+     </td>
+     <td>
+      0.52
+     </td>
+     <td>
+      tensor([174.56006, 803.67688, 435.13898, 922.86523])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      donut
+     </td>
+     <td>
+      0.29
+     </td>
+     <td>
+      tensor([714.93158, 791.15442, 741.10022, 812.68616])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      donut
+     </td>
+     <td>
+      0.28
+     </td>
+     <td>
+      tensor([741.43280, 789.30981, 768.00000, 811.68726])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      donut
+     </td>
+     <td>
+      0.27
+     </td>
+     <td>
+      tensor([707.90265, 830.26953, 738.79852, 847.97107])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      donut
+     </td>
+     <td>
+      0.26
+     </td>
+     <td>
+      tensor([730.90601, 817.64606, 763.89349, 847.75146])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      dining table
+     </td>
+     <td>
+      0.25
+     </td>
+     <td>
+      tensor([5.38159e-01, 7.90669e+02, 7.66289e+02, 1.01719e+03])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <section>
+   <h2>
+    Detecções na imagem: Eu e Vó.jpeg
+   </h2>
+   <img src="./1-Images/detected_Eu e Vó.jpeg"/>
+   <table>
+    <tr>
+     <th>
+      Objeto
+     </th>
+     <th>
+      Confiança
+     </th>
+     <th>
+      Coordenadas
+     </th>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.76
+     </td>
+     <td>
+      tensor([ 692.39203,  253.97073, 1266.70239,  959.91650])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      person
+     </td>
+     <td>
+      0.45
+     </td>
+     <td>
+      tensor([  0.00000, 140.20743, 828.54163, 958.91345])
+     </td>
+    </tr>
+    <tr>
+     <td>
+      couch
+     </td>
+     <td>
+      0.26
+     </td>
+     <td>
+      tensor([   0.00000,  247.36298, 1272.63184,  960.00000])
+     </td>
+    </tr>
+   </table>
+  </section>
+  <div class="chart-container">
+   <canvas height="400" id="barChart" width="600">
+   </canvas>
+  </div>
+  <script>
+   var ctx = document.getElementById('barChart').getContext('2d');
+            var data = [2, 41, 4, 6, 1, 1, 3, 2, 2, 6, 6, 3, 1, 2, 1, 2, 2, 1, 1, 1, 4];
+            var labels = ['car', 'person', 'potted plant', 'chair', 'tv', 'broccoli', 'bottle', 'cup', 'cake', 'dog', 'bus', 'pizza', 'vase', 'dining table', 'skateboard', 'remote', 'couch', 'cat', 'motorcycle', 'bird', 'donut'];
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Quantidade',
+                        data: data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+  </script>
+ </body>
+</html>
